@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pizza-style-shop/static/css/main.cea27406.css",
+    "main.js": "/pizza-style-shop/static/js/main.8d47d1d6.js",
+    "index.html": "/pizza-style-shop/index.html",
+    "main.cea27406.css.map": "/pizza-style-shop/static/css/main.cea27406.css.map",
+    "main.8d47d1d6.js.map": "/pizza-style-shop/static/js/main.8d47d1d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cea27406.css",
+    "static/js/main.8d47d1d6.js"
+  ]
+}
