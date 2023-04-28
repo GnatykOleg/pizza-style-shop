@@ -3,7 +3,11 @@
 :root {
   --primary-color: #ff8c42;
   --secondary-color: #ffddc8;
+
   --purple: #f461a8;
+  --green: #28f83d;
+  --red: #ff4141;
+
   --black: #151515;
   --white: #fff;
 
@@ -12,15 +16,15 @@
   --fw-bold: 700;
 
   --fs-small: 20px;
+  --fs-medium: 25px;
   --fs-large: 36px;
 
-  --transition: all 250ms linear;
+  --transition: all 400ms linear;
 
   --spacing-small: 5px;
   --spacing-medium: 15px;
   --spacing-large: 30px;
-
-  --box-shadow: 0px 10px 13px -7px #ff8c42, 6px 6px 27px 1px rgba(0, 0, 0, 0);
+  --spacing-extra: 50px;
 }
 
 body {
@@ -73,4 +77,18 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
