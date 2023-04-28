@@ -1,0 +1,34 @@
+.logoLink {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary-color);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-small);
+}
+
+.logoIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--spacing-small);
+}
+
+.logoPizzaText {
+  color: var(--white);
+}
+
+.logoStyleText {
+  color: #ff5b00;
+}
+
+@media screen and (min-width: 768px) {
+  .logoLink {
+    font-size: var(--fs-large);
+  }
+
+  .logoIcon {
+    width: 36px;
+    height: 36px;
+    margin-right: var(--spacing-medium);
+  }
+}
