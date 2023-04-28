@@ -1,0 +1,8 @@
+.header {
+  padding: var(--spacing-medium);
+
+  border-bottom: 3px solid var(--primary-color);
+
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
