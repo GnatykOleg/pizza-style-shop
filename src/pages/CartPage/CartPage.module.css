@@ -1,0 +1,35 @@
+.choosePizzaText {
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--secondary-color);
+
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-large);
+}
+
+.choosePizzaLink {
+  margin-left: var(--spacing-small);
+
+  color: var(--primary-color);
+
+  transition: var(--transition);
+}
+
+.choosePizzaLink:hover,
+.choosePizzaLink:focus {
+  color: var(--secondary-color);
+}
+
+.totalText {
+  composes: choosePizzaText;
+
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+
+  padding: var(--spacing-small) 0;
+
+  background-color: var(--primary-color);
+
+  border-radius: 15px;
+}

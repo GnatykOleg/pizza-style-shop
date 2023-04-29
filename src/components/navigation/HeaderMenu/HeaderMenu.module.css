@@ -47,13 +47,21 @@
 
 .cartCount {
   position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   top: -10px;
   right: -10px;
 
-  font-size: 12px;
+  font-size: 10px;
 
   background-color: var(--black);
-  padding: 1px;
+
   border: 2px solid var(--purple);
   border-radius: 50%;
 }
@@ -69,7 +77,9 @@
   }
 
   .cartCount {
+    width: 30px;
+    height: 30px;
+
     font-size: 14px;
-    padding: 3px;
   }
 }
