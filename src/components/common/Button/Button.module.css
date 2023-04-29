@@ -1,0 +1,26 @@
+.button {
+  display: block;
+
+  padding: var(--spacing-medium);
+
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semi-bold);
+
+  color: var(--black);
+
+  background: var(--white);
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--black);
+
+  transition: var(--transition);
+}
+
+.button:hover,
+.button:focus {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--white);
+}

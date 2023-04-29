@@ -1,0 +1,85 @@
+.list {
+  display: flex;
+}
+
+.listItemLogo {
+  margin-right: auto;
+}
+
+.listItemPizza {
+  margin-right: var(--spacing-medium);
+}
+
+.link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-small);
+
+  transition: var(--transition);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--secondary-color);
+}
+
+.linkActive {
+  composes: link;
+
+  color: var(--secondary-color);
+}
+
+.linkActive::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.cartCount {
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: -10px;
+  right: -10px;
+
+  font-size: 10px;
+
+  background-color: var(--black);
+
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .link,
+  .linkActive {
+    font-size: var(--fs-large);
+  }
+
+  .itemPizza {
+    margin-right: var(--spacing-large);
+  }
+
+  .cartCount {
+    width: 30px;
+    height: 30px;
+
+    font-size: 14px;
+  }
+}

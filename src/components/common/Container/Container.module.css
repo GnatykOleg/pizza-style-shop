@@ -1,0 +1,39 @@
+.container {
+  width: 100vw;
+
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  min-height: calc(100vh - 77px);
+
+  background-image: url("../../../assets/images/pizza-bg-image.webp");
+
+  background-size: 500px;
+
+  background-repeat: no-repeat;
+
+  background-position: bottom right;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+}
