@@ -7,7 +7,7 @@
   cursor: pointer;
   width: 280px;
 
-  background: rgba(255, 255, 255, 0.05);
+  background-color: rgb(37, 37, 37);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 
@@ -69,9 +69,8 @@
   color: var(--white);
 }
 
-.itemContentPlusMinusBtns {
-  display: flex;
-  justify-content: space-between;
+.itemContentPrice span {
+  color: var(--purple);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,33 +1,38 @@
 import React, { FC } from "react";
 
-import { Button } from "../../index";
+import { useAppSelector } from "../../../helpers/hooks/redux-hooks";
+import { getStateSelector } from "../../../redux/selectors/pizzasSelectors";
 
-import { THEME_COLORS } from "../../../helpers/constants/theme-constants";
-
-import { products } from "../../../db/products";
+import CardActions from "../CardActions/CardActions";
 
 import s from "./PizzaCards.module.css";
 
-const { GREEN, RED } = THEME_COLORS;
+const PizzaCards: FC<{ isCart?: boolean }> = ({ isCart = false }) => {
+  const { pizzas, cart } = useAppSelector(getStateSelector);
 
-const PizzaCards: FC = () => {
+  // The PizzaCards component accepts an isCart prop with a boolean value.
+  // Since the PizzaCards component is rendered on the PizzaPage and CartPage pages,
+  // we are filtering the pizzas by rule.
+  const pizzasToRender = isCart
+    ? pizzas.filter((pizza) => cart.some(({ id }) => id === pizza.id))
+    : pizzas;
+
   return (
     <ul className={s.list}>
-      {products.map(({ id, description, image, price, title }) => (
+      {pizzasToRender.map(({ id, description, image, price, title }) => (
         <li key={id} className={s.item}>
           <div className={s.itemImageWrapper}>
             <img src={image} alt={title} />
           </div>
+
           <div className={s.itemContent}>
             <p className={s.itemContentTitle}>{title}</p>
             <p className={s.itemContentDescription}>{description}</p>
-            <p className={s.itemContentPrice}>Price: {price}₴</p>
+            <p className={s.itemContentPrice}>
+              Price: <span>{price}UAH</span>
+            </p>
 
-            <Button text="Add to cart" inlineStyles={{ margin: "0 auto" }} />
-            <div className={s.itemContentPlusMinusBtns}>
-              <Button text="+" inlineStyles={{ color: GREEN }} />
-              <Button text="-" inlineStyles={{ color: RED }} />
-            </div>
+            <CardActions id={id} />
           </div>
         </li>
       ))}

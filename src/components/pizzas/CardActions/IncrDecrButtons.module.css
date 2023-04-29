@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countText {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semi-bold);
+  color: var(--white);
+}
