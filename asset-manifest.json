@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/pizza-style-shop/static/css/main.cea27406.css",
-    "main.js": "/pizza-style-shop/static/js/main.8d47d1d6.js",
+    "main.css": "/pizza-style-shop/static/css/main.6ed6b3d3.css",
+    "main.js": "/pizza-style-shop/static/js/main.4e304095.js",
+    "static/js/211.feee107c.chunk.js": "/pizza-style-shop/static/js/211.feee107c.chunk.js",
+    "static/css/563.77b54b05.chunk.css": "/pizza-style-shop/static/css/563.77b54b05.chunk.css",
+    "static/js/563.ab137cd4.chunk.js": "/pizza-style-shop/static/js/563.ab137cd4.chunk.js",
+    "static/media/pizza-bg-image.webp": "/pizza-style-shop/static/media/pizza-bg-image.f37284c31811006a9db2.webp",
+    "static/media/logo-pizza.webp": "/pizza-style-shop/static/media/logo-pizza.64a9e1f4fa9a83ff6b1c.webp",
     "index.html": "/pizza-style-shop/index.html",
-    "main.cea27406.css.map": "/pizza-style-shop/static/css/main.cea27406.css.map",
-    "main.8d47d1d6.js.map": "/pizza-style-shop/static/js/main.8d47d1d6.js.map"
+    "main.6ed6b3d3.css.map": "/pizza-style-shop/static/css/main.6ed6b3d3.css.map",
+    "main.4e304095.js.map": "/pizza-style-shop/static/js/main.4e304095.js.map",
+    "211.feee107c.chunk.js.map": "/pizza-style-shop/static/js/211.feee107c.chunk.js.map",
+    "563.77b54b05.chunk.css.map": "/pizza-style-shop/static/css/563.77b54b05.chunk.css.map",
+    "563.ab137cd4.chunk.js.map": "/pizza-style-shop/static/js/563.ab137cd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cea27406.css",
-    "static/js/main.8d47d1d6.js"
+    "static/css/main.6ed6b3d3.css",
+    "static/js/main.4e304095.js"
   ]
 }

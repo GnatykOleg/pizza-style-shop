@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpizza_style_shop=self.webpackChunkpizza_style_shop||[]).push([[211],{9211:function(s,e,i){i.r(e);i(2791);var n=i(9730),a=i(3329);e.default=function(){return(0,a.jsxs)(n.$0,{children:[(0,a.jsx)("h1",{className:"visually-hidden",children:"Pizza page"}),(0,a.jsx)("main",{children:(0,a.jsx)(n.W2,{children:(0,a.jsx)(n.vy,{})})})]})}}}]);
+//# sourceMappingURL=211.feee107c.chunk.js.map
